@@ -1,8 +1,29 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"github.com/gorevision/internal/errorhandling"
+	"github.com/pkg/errors"
+	"log"
+)
 
 func main() {
+
+	res, error := errorhandling.Divide(6, 0)
+	//if error != nil {
+	//	log.Fatal(error)
+	//}
+
+	if error != nil {
+		log.Fatal(
+
+			//good way to return error to calling client
+			errors.Wrap(error, "something failed"),
+		)
+	}
+
+	fmt.Printf("Divide 6/4=%v \n", res)
+	fmt.Println()
 	fmt.Printf("Hello world\n")
 
 	var fruit [3] string

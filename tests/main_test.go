@@ -194,7 +194,7 @@ func TestCreateCustomFieldsIntegration(t *testing.T) {
 
 	serverUrl := "https://api.sendgrid.com/v3/contactdb/custom_fields"
 
-	token := "token"
+	token := "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"
 	response, error := generateCustomFields(requestBody, serverUrl, token)
 
 	if error != nil {
@@ -204,5 +204,4 @@ func TestCreateCustomFieldsIntegration(t *testing.T) {
 	if response.StatusCode != http.StatusOK {
 		t.Fatalf("Remote Server returned error code: %d", response.StatusCode)
 	}
-
 }

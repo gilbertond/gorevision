@@ -1,0 +1,29 @@
+package main
+
+import (
+	"database/sql"
+	"github.com/pressly/goose"
+
+)
+
+func init() {
+	goose.AddMigration(upFetchUserData, downFetchUserData)
+}
+
+func upFetchUserData(tx *sql.Tx) error {
+	// This code is executed when the migration is applied.
+	_, err := tx.Exec(`UPDATE users SET username='test' WHERE username='test_updated';`)
+	if err != nil {
+		return err
+	}
+	return nil
+}
+
+func downFetchUserData(tx *sql.Tx) error {
+	// This code is executed when the migration is rolled back.
+	_, err := tx.Exec(`UPDATE users SET username='gil' WHERE username='gil_updated';`)
+	if err != nil {
+		return err
+	}
+	return nil
+}
