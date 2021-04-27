@@ -121,6 +121,22 @@
   version = "1.3.1"
 
 [[projects]]
+  digest = "1:ebffb4b4c8ddcf66bb549464183ea2ddbac6c58a803658f67249f83395d17455"
+  name = "github.com/hashicorp/go-version"
+  packages = ["."]
+  pruneopts = ""
+  revision = "59da58cfd357de719a4d16dac30481391a56c002"
+  version = "v1.2.1"
+
+[[projects]]
+  digest = "1:51430c345f48c781f7f43146b574ec498c62c608bfff3715fef4c915d96ed4fc"
+  name = "github.com/hashicorp/logutils"
+  packages = ["."]
+  pruneopts = ""
+  revision = "a335183dfd075f638afcc820c90591ca3c97eba6"
+  version = "v1.0.0"
+
+[[projects]]
   branch = "master"
   digest = "1:1d80b641c3e7a2c14000a1703d6ea3dc9755d42ca44342a455cbeaf0d8fe1cc1"
   name = "github.com/hpcloud/tail"
@@ -199,6 +215,21 @@
   pruneopts = ""
   revision = "90e289841c1ed79b7a598a7cd9959750cb5e89e2"
   version = "v1.5.0"
+
+[[projects]]
+  digest = "1:49a15fbc754cd09420d792ef8154a3edd24d96848ac97029d85b95b3537deb8c"
+  name = "github.com/pact-foundation/pact-go"
+  packages = [
+    "client",
+    "dsl",
+    "install",
+    "proxy",
+    "types",
+    "utils",
+  ]
+  pruneopts = ""
+  revision = "8940c41cdaa9bbcda0682f12c4bdba18acb37cbc"
+  version = "v1.5.1"
 
 [[projects]]
   digest = "1:1d7e1867c49a6dd9856598ef7c3123604ea3daabf5b83f303ff457bcbc410b1d"
@@ -313,6 +344,14 @@
   version = "v1.4.7"
 
 [[projects]]
+  digest = "1:b8a17fdcac3c9b70b7e954ff6cea876fa6c948fd0d9823488b7ce0dbf29fabcd"
+  name = "gopkg.in/robfig/cron.v3"
+  packages = ["."]
+  pruneopts = ""
+  revision = "ccba498c397bb90a9c84945bbb0f7af2d72b6309"
+  version = "v3.0.1"
+
+[[projects]]
   digest = "1:b9ee0847779d4ce93d078686aa95e02b6ceba8e649d783cdad6bada6dafee1b6"
   name = "gopkg.in/tomb.v1"
   packages = ["."]
@@ -349,10 +388,12 @@
     "github.com/jckuester/go-aws-sdk-mock-examples/mocks_mockery",
     "github.com/onsi/ginkgo",
     "github.com/onsi/gomega",
+    "github.com/pact-foundation/pact-go/dsl",
     "github.com/pkg/errors",
     "github.com/pressly/goose",
     "github.com/stretchr/testify/assert",
     "github.com/stretchr/testify/mock",
+    "gopkg.in/robfig/cron.v3",
   ]
   solver-name = "gps-cdcl"
   solver-version = 1

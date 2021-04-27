@@ -1,0 +1,51 @@
+I, [2021-04-26T22:09:36.827909 #17739]  INFO -- : Registered expected interaction GET /path?param1=556&param2=abc
+D, [2021-04-26T22:09:36.828428 #17739] DEBUG -- : {
+  "description": "name of test case",
+  "providerState": "some state",
+  "request": {
+    "method": "GET",
+    "path": "/path",
+    "query": {
+      "param1": [
+        "556"
+      ],
+      "param2": [
+        "abc"
+      ]
+    },
+    "headers": {
+      "Authorization": "Bearer user.token.string",
+      "Content-Type": "application/json"
+    }
+  },
+  "response": {
+    "status": 200,
+    "headers": {
+      "Context-Type": "application/json"
+    }
+  },
+  "metadata": null
+}
+I, [2021-04-26T22:09:36.834009 #17739]  INFO -- : Received request GET /path?param1=556&param2=abc
+D, [2021-04-26T22:09:36.834197 #17739] DEBUG -- : {
+  "path": "/path",
+  "query": "param1=556&param2=abc",
+  "method": "get",
+  "headers": {
+    "Content-Type": "application/json",
+    "Host": "127.0.0.1:64672",
+    "User-Agent": "Go-http-client/1.1",
+    "Authorization": "Bearer user.token.string",
+    "Accept-Encoding": "gzip",
+    "Version": "HTTP/1.1"
+  }
+}
+I, [2021-04-26T22:09:36.834687 #17739]  INFO -- : Found matching response for GET /path?param1=556&param2=abc
+D, [2021-04-26T22:09:36.834761 #17739] DEBUG -- : {
+  "status": 200,
+  "headers": {
+    "Context-Type": "application/json"
+  }
+}
+I, [2021-04-26T22:09:36.838511 #17739]  INFO -- : Verifying - interactions matched
+I, [2021-04-26T22:09:36.842012 #17739]  INFO -- : Cleared interactions

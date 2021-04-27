@@ -1,0 +1,34 @@
+{
+  "consumer": {
+    "name": "api-consumer-6"
+  },
+  "provider": {
+    "name": "api-producer"
+  },
+  "interactions": [
+    {
+      "description": "name of test case",
+      "providerState": "some state",
+      "request": {
+        "method": "GET",
+        "path": "/path",
+        "query": "param1=556&param2=abc",
+        "headers": {
+          "Authorization": "Bearer user.token.string",
+          "Content-Type": "application/json"
+        }
+      },
+      "response": {
+        "status": 200,
+        "headers": {
+          "Context-Type": "application/json"
+        }
+      }
+    }
+  ],
+  "metadata": {
+    "pactSpecification": {
+      "version": "2.0.0"
+    }
+  }
+}
