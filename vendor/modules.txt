@@ -166,8 +166,8 @@ github.com/stretchr/objx
 ## explicit
 github.com/stretchr/testify/assert
 github.com/stretchr/testify/mock
-# golang.org/x/net v0.0.0-20190724013045-ca1201d0de80
-## explicit; go 1.11
+# golang.org/x/net v0.7.0
+## explicit; go 1.17
 golang.org/x/net/html
 golang.org/x/net/html/atom
 golang.org/x/net/html/charset
@@ -178,8 +178,8 @@ golang.org/x/net/idna
 # golang.org/x/sys v0.10.0
 ## explicit; go 1.17
 golang.org/x/sys/unix
-# golang.org/x/text v0.3.2
-## explicit
+# golang.org/x/text v0.7.0
+## explicit; go 1.17
 golang.org/x/text/encoding
 golang.org/x/text/encoding/charmap
 golang.org/x/text/encoding/htmlindex
