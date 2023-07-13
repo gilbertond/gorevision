@@ -2,10 +2,12 @@ package ginkgostuff_test
 
 import (
 	"fmt"
-	. "github.com/gorevision/channels"
-	. "github.com/gorevision/tests/ginkgostuff"
-	"github.com/stretchr/testify/assert"
 	"testing"
+
+	"github.com/stretchr/testify/assert"
+
+	. "github.com/gorevision/concurrency/channels"
+	. "github.com/gorevision/tests/ginkgostuff"
 
 	. "github.com/onsi/ginkgo"
 	. "github.com/onsi/gomega"
@@ -64,15 +66,15 @@ var _ = Describe("my test suite", func() {
 	It("sum test", func() {
 		fmt.Println("testing sum")
 
-		//Different assertions
+		// Different assertions
 		Expect(Sum(1, 2)).To(BeEquivalentTo(3))
 		Expect(Sum(2, 2)).Should(Equal(4))
 
 		sum, error := Sum(1, 1)
 		_, customError := SumWithError(1, 1)
 
-		Expect(error).Should(Succeed()) //Assert no error occurred
-		Expect(customError).ShouldNot(Succeed())//😡😡😡😡😡😡😡😡😡😡😡😡😡😡😡😡😡
+		Expect(error).Should(Succeed())          // Assert no error occurred
+		Expect(customError).ShouldNot(Succeed()) // 😡😡😡😡😡😡😡😡😡😡😡😡😡😡😡😡😡
 
 		assert.True(nil, sum == 2)
 
@@ -82,7 +84,7 @@ var _ = Describe("my test suite", func() {
 		channel := make(chan int, 5)
 		go SomeFunc(cap(channel), channel)
 
-		//close(channel)
+		// close(channel)
 		Eventually(channel).Should(Receive(Equal(1)))
 	})
 })

@@ -1,34 +1,39 @@
 {
-  "consumer": {
-    "name": "api-consumer-1"
-  },
-  "provider": {
-    "name": "api-producer"
-  },
-  "interactions": [
+  "version": "3.9.3",
+  "examples": [
     {
-      "description": "name of test case",
-      "providerState": "some state",
-      "request": {
-        "method": "GET",
-        "path": "/path",
-        "query": "param1=556&param2=abc",
-        "headers": {
-          "Authorization": "Bearer user.token.string",
-          "Content-Type": "application/json"
-        }
-      },
-      "response": {
-        "status": 200,
-        "header": {
-          "Context-Type": "application/json"
-        }
-      }
+      "id": "/Users/gilberto/go-workspace/pact/lib/vendor/ruby/2.2.0/gems/pact-1.55.5/lib/pact/provider/rspec.rb[1:1:1:1:1:1]",
+      "interaction_index": 0,
+      "description": "has status code 200",
+      "full_description": "Verifying a pact between api-consumer-4 and api-producer Given some state name of test case with GET /path?param1=556&param2=abc returns a response which has status code 200",
+      "status": "passed",
+      "file_path": "/Users/gilberto/go-workspace/pact/lib/vendor/ruby/2.2.0/gems/pact-1.55.5/lib/pact/provider/rspec.rb",
+      "line_number": 170,
+      "run_time": 0.005828,
+      "mismatches": [],
+      "pact_url": "http://localhost/pacts/provider/api-producer/consumer/api-consumer-4/pact-version/c3cd5db05559ad7c672f99cd6978a6713ce59b84/metadata/c1tdW2xdPXRydWUmc1tdW2N2bl09MS4wLjA="
     }
   ],
-  "metadata": {
-    "pactSpecification": {
-      "version": "2.0.0"
-    }
-  }
+  "summary": {
+    "duration": 0.00681,
+    "example_count": 1,
+    "failure_count": 0,
+    "pending_count": 0,
+    "errors_outside_of_examples_count": 0,
+    "pacts": [
+      {
+        "notices": [
+          {
+            "when": "before_verification",
+            "text": "The pact at http://localhost/pacts/provider/api-producer/consumer/api-consumer-4/pact-version/c3cd5db05559ad7c672f99cd6978a6713ce59b84 is being verified because it matches the following configured selection criterion: latest pact between a consumer and api-producer"
+          }
+        ],
+        "url": "http://localhost/pacts/provider/api-producer/consumer/api-consumer-4/pact-version/c3cd5db05559ad7c672f99cd6978a6713ce59b84/metadata/c1tdW2xdPXRydWUmc1tdW2N2bl09MS4wLjA=",
+        "consumer_name": "api-consumer-4",
+        "provider_name": "api-producer",
+        "short_description": "latest"
+      }
+    ]
+  },
+  "summary_line": "1 example, 0 failures"
 }

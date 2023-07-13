@@ -3,7 +3,6 @@ package main
 import (
 	"fmt"
 	"strings"
-	"time"
 )
 
 func Index(vs []string, t string) int {
@@ -56,7 +55,7 @@ func Map(vs []string, f func(string) string) []string {
 }
 
 func main() {
-	t:=time.NewTicker(time.Nanosecond)
+	// t:=time.NewTicker(time.Nanosecond)
 
 	var strs = []string{"peach", "apple", "pear", "plum"}
 

@@ -11,7 +11,7 @@ import (
 
 func setup() *http.Response {
 	pact := dsl.Pact{
-		Consumer:                 "api-consumer-6",
+		Consumer:                 "api-consumer-3",
 		Provider:                 "api-producer",
 		LogLevel:                 "DEBUG",
 		LogDir:                   "logs",

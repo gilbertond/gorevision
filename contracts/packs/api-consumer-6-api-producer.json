@@ -20,7 +20,26 @@
       },
       "response": {
         "status": 200,
+        "header": {
+          "Context-Type": "application/json"
+        }
+      }
+    },
+    {
+      "description": "name of test case",
+      "providerState": "some state 6",
+      "request": {
+        "method": "GET",
+        "path": "/path",
+        "query": "param1=556&param2=abc",
         "headers": {
+          "Authorization": "Bearer user.token.string",
+          "Content-Type": "application/json"
+        }
+      },
+      "response": {
+        "status": 200,
+        "header": {
           "Context-Type": "application/json"
         }
       }

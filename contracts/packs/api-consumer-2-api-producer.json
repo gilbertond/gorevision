@@ -20,7 +20,7 @@
       },
       "response": {
         "status": 200,
-        "headers": {
+        "header": {
           "Context-Type": "application/json"
         }
       }

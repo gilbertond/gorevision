@@ -45,15 +45,15 @@ func TestSetupProducer() {
 		ProviderBaseURL: "http://localhost:8000",
 
 		//PactURLs:  []string{filepath.ToSlash(fmt.Sprintf("%s/api-consumer-api-producer.json", packUrl))}, // specific pacts
-		BrokerURL: "http://localhost", // Instead of above, 			this will pick pacts for all consumers
-		//Tags:                       []string{"dev", "stage"}, //use tags to pick pacts with specific tags
+		BrokerURL:                  "http://localhost",       // Instead of above, 			this will pick pacts for all consumers
+		Tags:                       []string{"dev", "stage"}, //use tags to pick pacts with specific tags
 		ProviderVersion:            "1.0.0",
 		BrokerUsername:             "",
 		BrokerPassword:             "",
 		PublishVerificationResults: true,
 		FailIfNoPactsFound:         false,
 		StateHandlers: types.StateHandlers{
-			"some state0": func() error {
+			"some state": func() error {
 				dataRepository = "ndenzi"
 				return nil
 			},
@@ -116,6 +116,6 @@ func TestSetupProducer() {
 		BrokerUsername:  "",
 		BrokerPassword:  "",
 		ConsumerVersion: "1.0.0",
-		//Tags:            []string{"dev", "stage"},
+		Tags:            []string{"dev", "stage"},
 	})
 }
