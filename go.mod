@@ -4,7 +4,7 @@ go 1.18
 
 require (
 	github.com/aws/aws-lambda-go v1.13.2
-	github.com/aws/aws-sdk-go v1.21.6
+	github.com/aws/aws-sdk-go v1.34.0
 	github.com/aws/aws-sdk-go-v2 v0.12.0
 	github.com/bitly/go-simplejson v0.5.0
 	github.com/davecgh/go-spew v1.1.1 // indirect
@@ -13,16 +13,16 @@ require (
 	github.com/hashicorp/logutils v1.0.0 // indirect
 	github.com/hpcloud/tail v1.0.1-0.20180514194441-a1dbeea552b7 // indirect
 	github.com/jckuester/go-aws-sdk-mock-examples v0.0.0-20180124141822-4f36f0811a3d
-	github.com/jmespath/go-jmespath v0.0.0-20180206201540-c2b33e8439af // indirect
+	github.com/jmespath/go-jmespath v0.3.0 // indirect
 	github.com/onsi/ginkgo v1.8.0
 	github.com/onsi/gomega v1.5.0
 	github.com/pact-foundation/pact-go v1.5.1
-	github.com/pkg/errors v0.8.1
+	github.com/pkg/errors v0.9.1
 	github.com/pmezard/go-difflib v1.0.0 // indirect
 	github.com/pressly/goose v2.6.0+incompatible
 	github.com/stretchr/objx v0.1.1 // indirect
-	github.com/stretchr/testify v1.4.0
-	golang.org/x/net v0.0.0-20190724013045-ca1201d0de80 // indirect
+	github.com/stretchr/testify v1.5.1
+	golang.org/x/net v0.0.0-20200202094626-16171245cfb2 // indirect
 	golang.org/x/sys v0.10.0 // indirect
 	golang.org/x/text v0.3.2 // indirect
 	gopkg.in/fsnotify/fsnotify.v1 v1.4.7 // indirect
